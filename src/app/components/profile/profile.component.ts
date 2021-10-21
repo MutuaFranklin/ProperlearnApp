@@ -99,6 +99,7 @@ export class ProfileComponent implements OnInit {
 
   profileUpdate(){
     const uploadData = new FormData()
+    // uploadData.append('phone_number', this.phone_number)
     uploadData.append('profile_photo', this.profile_photo)
     uploadData.append('phone_number', this.profile.phone_number)
     this.authBackup.updateProfile(this.profile).subscribe(data => {
