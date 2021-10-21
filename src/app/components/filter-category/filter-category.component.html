@@ -1,5 +1,5 @@
 <div class="dynamic-style" *ngIf="motivations.length<5">
-  <div class="container-fluid" id="main" style="height: 100vh;" >
+  <div class="container-fluid" id="main" style="height: 150vh;" >
     <section id="nav">
       <app-navbar></app-navbar>
     </section>
@@ -8,7 +8,7 @@
       <h5 class="text-center text-white">Choose category</h5>
         <div class="buttons">
           <div>
-            <a href="/home" ><button class='all-btn btn btn-lg' id="all">All</button></a>
+            <a href="home" ><button class='all-btn btn btn-lg' id="all">All</button></a>
           </div>
           <div class="" *ngFor="let category of categories">
             <div>
